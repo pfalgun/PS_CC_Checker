@@ -298,8 +298,8 @@ function brute-force($guess_static){
 Get-Content $input_file | Foreach-Object {
 
 	#Reads the input
-	$first6_full=$_.Split(“:”)[0]
-	$src_hash=$_.Split(“:”)[1]
+	$first6_full=$_.Split( : )[0]
+	$src_hash=$_.Split( : )[1]
 	
 	if($first6_full.length -eq 14){$toguess=0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 	elseif($first6_full.length -eq 15){$toguess=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
